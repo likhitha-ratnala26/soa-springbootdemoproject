@@ -78,5 +78,11 @@ public class DoctorServiceImpl implements DoctorService{
 		//signature method is used
 		return repo.findByGender(gender);
 	}
+
+	@Override
+	public Long doctorCount() {
+		// TODO Auto-generated method stub
+		return repo.count();
+	}
 	
 }
